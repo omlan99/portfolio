@@ -4,6 +4,7 @@ import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Banner from "./Components/Banner";
 import Skills from "./Components/Skills";
+import Contact from "./Components/Contact";
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
         <Banner></Banner>
         <About></About>
         <Skills></Skills>
+        <Contact></Contact>
       </div>
       <Footer></Footer>
     </div>

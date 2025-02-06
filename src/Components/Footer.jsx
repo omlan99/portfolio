@@ -1,8 +1,8 @@
 import React from "react";
-import linkedin from "../assets/icons8-linkedin-96.png";
-import github from "../assets/icons8-github-logo-94.png";
+import linkedin from "../assets/icons8-linkedin-50.png";
+import github from "../assets/icons8-github-50.png";
 import x from "../assets/icons8-x-logo-50.png";
-import fb from "../assets/icons8-facebook-logo-96.png";
+import fb from "../assets/icons8-facebook-logo-50.png";
 const Footer = () => {
   return (
     <div>
