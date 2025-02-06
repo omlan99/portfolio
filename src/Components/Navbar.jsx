@@ -1,21 +1,28 @@
 import React from "react";
-import logo from "../assets/amlan-dey-high-resolution-logo-grayscale.png"
+
 const Navbar = () => {
-    const links = <>
-     <li>
-                <a>About</a>
-              </li>
-              <li>
-                <a>Project</a>
-                
-              </li>
-              <li>
-                <a>Contact</a>
-              </li>
+  const links = (
+    <>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a>About</a>
+      </li>
+      <li>
+        <a href="">Skills</a>
+      </li>
+      <li>
+        <a>Project</a>
+      </li>
+      <li>
+        <a>Contact</a>
+      </li>
     </>
+  );
   return (
-    <div>
-      <div className="navbar bg-base-100 fixed pr-12">
+    <div className="fixed top-0 left-0 w-full bg-base-100 shadow-md z-50">
+      <div className="navbar container mx-auto   ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,15 +45,13 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-             {links}
+              {links}
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">Amlan Dey</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn">Resume</a>
