@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../assets/Black and White Minimalist Professional Initial Logo.png"
 const Navbar = () => {
   const links = (
     <>
@@ -48,7 +48,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Amlan Dey</a>
+          <a className="btn btn-ghost text-xl"><span ><img className=" h-[50px]" src={logo} alt="" /></span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
