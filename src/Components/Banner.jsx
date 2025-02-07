@@ -6,8 +6,8 @@ import x from "../assets/icons8-x-logo-50.png";
 import fb from "../assets/icons8-facebook-logo-50.png";
 const Banner = () => {
   return (
-    <div className="grid lg:grid-cols-2 mb-[100px] py-[180px]">
-      <div className="pl-20">
+    <div className="grid lg:grid-cols-2 mb-[60px] py-[150px] gap-5 " id="home">
+      <div className="pl-20 flex flex-col justify-center">
         <div className="flex items-center pb-5">
           <div>
             <p className="font-semibold text-2xl">Hello, I am</p>
@@ -36,7 +36,7 @@ const Banner = () => {
       </div>
       <div className="flex justify-center items-center">
         <img
-          className="h-[300px] w-[300px] rounded-full object-cover"
+          className="h-[500px] w-[500px] rounded-full object-cover"
           src={person}
           alt=""
         />

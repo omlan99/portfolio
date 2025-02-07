@@ -9,8 +9,8 @@ import tailwind from "../assets/icons8-tailwind-css-96.png"
 import Marquee from "react-fast-marquee";
 const Skills = () => {
   return (
-    <div className="mb-[100px]">
-      <h2 className="text-center text-6xl font-medium pb-20">Skills</h2>
+    <div className="mb-[60px]" id="skills">
+      <h2 className="text-center text-6xl font-medium pb-20 pt-[100px]">Skills</h2>
       <div>
         <Marquee>
           <div className="p-5 border border-gray-400 rounded-xl mr-5">

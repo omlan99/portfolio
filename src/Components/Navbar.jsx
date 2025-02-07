@@ -1,22 +1,23 @@
 import React from "react";
 import logo from "../assets/Black and White Minimalist Professional Initial Logo.png"
+import { Link } from "react-scroll";
 const Navbar = () => {
   const links = (
     <>
       <li>
-        <a href="">Home</a>
+        <Link to="home" smooth={true} duration={500} className="cursor-pointer px-4 py-2 bg-gray-300 text-black rounded">Home</Link> 
       </li>
       <li>
-        <a>About</a>
+      <Link to="about" smooth={true} duration={500} className="cursor-pointer px-4 py-2 bg-gray-300 text-black  rounded">About</Link> 
       </li>
       <li>
-        <a href="">Skills</a>
+      <Link to="skills" smooth={true} duration={500} className="cursor-pointer px-4 py-2 bg-gray-300 text-black  rounded">Skills</Link> 
       </li>
       <li>
-        <a>Project</a>
+      <Link to="projects" smooth={true} duration={500} className="cursor-pointer px-4 py-2 bg-gray-300  text-black rounded">Projets</Link> 
       </li>
       <li>
-        <a>Contact</a>
+      <Link to="contact" smooth={true} duration={500} className="cursor-pointer px-4 py-2 bg-gray-300  text-black rounded">Contact</Link> 
       </li>
     </>
   );
@@ -51,7 +52,7 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl"><span ><img className=" h-[50px]" src={logo} alt="" /></span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="menu menu-horizontal px-1 space-x-3">{links}</ul>
         </div>
         <div className="navbar-end">
           <a className="btn btn-neutral">Resume</a>
