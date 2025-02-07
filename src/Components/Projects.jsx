@@ -9,7 +9,7 @@ const Projects = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/projects")
+      .get("https://portfolio-server-smoky-eight.vercel.app/projects")
       .then((res) => {
         setProjects(res.data);
         setLoading(false);
@@ -66,10 +66,10 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <div className="py-4">
+              <div className="py-4 pl-4">
               <p className="font-bold text-lg ">Features</p>
               <ul>
-                {selectedProject.features.map((feature, index) =><li key={index}>{feature}</li>)}
+                {selectedProject.features.map((feature, index) =><li className="list-disc" key={index}>{feature}</li>)}
               </ul>
               </div>
 
